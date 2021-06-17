@@ -303,6 +303,41 @@ else:
 
 print("종료합니다") '''
 
+#pass 기능
+
+'''score = 85
+
+if score >= 80:
+    pass #pass 가 가능하다
+else:
+    print("열심히 하세용")
+
+print("프로그램을 종료합니다")'''
+
+'''score = 85
+if score >= 80: result = "Success"
+else: result = "Fail"
+print(result) '''
+
+
+#특정 원소의 값 제거
+'''a = [1,2,3,3,4,5,5,6]
+remove_set = {3,5}
+
+result = []
+for i in a:
+    if i not in remove_set:
+        result.append(i)
+
+print(result)'''
+
+#코드 줄이기
+'''a = [1,2,3,3,4,5,5,6]
+remove_set = {3,5}
+
+result = [i for i in a if i not in remove_set]
+print(result)'''
+
 
 
 
