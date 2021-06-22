@@ -1,0 +1,39 @@
+# 1.그리디 (현재상황에서 가장 좋은것을 고르는 것
+
+'''n = 1260 #1260원의돈
+count = 0
+
+#큰 단위의 화폐부터 차례대로 확인
+coin_types = [500,100,50,10]
+
+for coin in coin_types:
+    count += n // coin #해당 화폐로 거슬러 줄 수 있는 동전의 개수 세기
+    n %= coin
+
+print(count)'''
+
+# 2. 큰 수의 법칙
+#n,m,k를 차례대로 받는다
+
+n,m,k = map(int, input().split())
+# n개의 수를 공백으로 구문하여 입력받기
+data = list(map(int,input().split()))
+
+data.sort() #입력 받은 수 정렬하기
+first = data[n-1] #가장 큰수
+second = data[n-2] # 두번째로 가장 큰 수
+
+result = 0
+
+while True:
+    for i in range(k): #가장 큰수를 k번 더하기
+        if m == 0: #m이 0 이라면 반복문 탈출
+            break
+        result += first
+        m -= 1 #더할때마다 1 빼기
+    if m == 0: #m 이 0 이라면 바녹문 탈출
+        break
+    result += second #두번째로 큰 수를 한번 더하기
+    m -= 1 #더할때마다 1씩 빼기
+
+print(result)
