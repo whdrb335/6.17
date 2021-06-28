@@ -1,0 +1,49 @@
+#if 조건문에 else 구문을 추가해서 짝수와 홀수 구분
+'''number = int(input("정수를 입력하세요 : "))
+
+if number % 2 == 0 :
+    print("짝수입니다")
+
+else:
+    print("홀수입니다")'''
+
+#계절 구하기
+'''import datetime
+
+now = datetime.datetime.now()
+
+if 3 <= now.month <= 6:
+    print("{}월 이므로 봄 입니다".format(now.month))
+
+elif 6 <= now.month <= 9:
+    print("{}월 이므로 여름 입니다".format(now.month))
+
+elif 10 <= now.month <= 11:
+    print("{}월 이므로 여름 입니다".format(now.month))
+
+else:
+    print("겨울입니다")'''
+
+#학점을 나타내는 예제
+'''number = float(input("학점을 입력하세요 : "))
+
+if number == 4.5:
+    print("신")
+elif 4.2 <= number:
+    print("교수님의 사랑")
+elif 3.5 <= number:
+    print("현 체제의 수호자")
+elif 2.8 <= number:
+    print("일반인")
+elif 2.3 <= number:
+    print("일탈은 꿈꾸는 소시민")
+elif 1.75 <= number:
+    print("오락문화의 선구자")
+elif 1.0 <= number:
+    print("불가촉천민")
+elif 0.5 <= number:
+    print("자벌레")
+elif 0 <= number:
+    print("플랑크톤")
+else:
+    print("시대를 앞서가는 혁명의 씨앗")'''
