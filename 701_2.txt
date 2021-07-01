@@ -1,0 +1,16 @@
+# 1.
+'''dict_a = {}
+
+dict_a["name"] = "구름"
+
+print(dict_a)'''
+
+# 2.
+pets = [
+    {"name" : "구름" , "age" : 5},
+    {"name" : "초코" , "age" : 3},
+    {"name" : "아지" , "age" : 1},
+    {"name" : "호랑이" , "age" : 1},
+]
+
+print(pets["name"])
